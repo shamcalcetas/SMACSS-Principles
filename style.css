@@ -1,0 +1,95 @@
+/* Base Rules */
+body {
+    color: black;
+    font-family: Times New Roman;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.text-header {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-body {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+/* Layout Rules */
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.header {
+    padding: 20px;
+}
+.footer {
+    background-color: #f1f2ee;
+    padding: 20px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+
+/* Module Rules */
+.container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding-bottom: 20px;
+    width: 200px;
+    margin: 50px;
+}
+
+.button1 {
+    background-color: #667b68;
+}
+
+.button2 {
+    background-color: #8b9677;
+}
+
+.skin {
+    flex: 0 1 200px;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    font-size: 10px;
+    margin: 4px 2px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* State Rules */
+.header.is-sticky,
+.footer.is-sticky {
+    position: fixed;
+    width: 100%;
+}
+
+.skin:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.skin:active {
+    background-color: #333;
+}
+
+
+/* Theme Rules */
+.theme-dark {
+    background-color: #33372a;
+    color: white;
+}
